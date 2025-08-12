@@ -1,0 +1,23 @@
+text-color=#cdd6f4
+font=Noto Sans 10
+
+background-color=#0F0F17
+
+border-radius=2
+border-size=2
+border-color=#27272E
+
+layer=overlay
+anchor=bottom-right
+max-history=128
+max-visible=10
+default-timeout=5000
+
+margin=6
+outer-margin=5,0
+
+max-icon-size=48
+icon-border-radius=2
+
+padding=6
+on-button-left=dismiss

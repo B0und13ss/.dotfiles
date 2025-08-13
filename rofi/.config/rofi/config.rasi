@@ -1,2 +1,98 @@
+* {
+  font:   "Noto Sans 12";
 
-@theme "/home/ian/.config/rofi/themes/spotlight-dark.rasi"
+  main     : #0F0F17;
+  bord   : #27272E;
+  text     : #CDD6F4;
+
+  red     : #f7768e;
+  green   : #9ece6a;
+  yellow  : #e0af68;
+  blue    : #7aa2f7;
+  magenta : #9a7ecc;
+  cyan    : #4abaaf;
+
+  accent: @red;
+  urgent: @yellow;
+
+  text-color       : @text;
+
+  border: 0;
+  margin  : 0;
+  padding : 0;
+  spacing : 0;
+}
+
+
+element-icon, element-text, scrollbar {
+  cursor: pointer;
+}
+
+window {
+  location : southwest;
+  width    : 400px;
+  x-offset : 2px;
+  y-offset : -2px;
+
+  background-color: @main;
+  border-color: @bord;
+  border: 2px;
+  border-radius: 4px;
+}
+
+entry {
+  placeholder: "Search";
+  text-color: @text;
+  border: 0px;
+}
+
+inputbar {
+  spacing  : 8px;
+  padding  : 4px 8px;
+  text-color: @text;
+  children : [ entry ];
+  background-color: @main;
+  border: 0px;
+}
+
+icon-search, entry, element-icon, element-text {
+  vertical-align: 0.5;
+  background-color: inherit;
+}
+
+icon-search {
+  expand   : false;
+  filename : "search-symbolic";
+  size     : 14px;
+}
+
+listview {
+  lines        : 10;
+  columns      : 1;
+  scrollbar    : false;
+  fixed-height : true;
+  dynamic      : true;
+  border: 0px;
+}
+
+element {
+  background-color: @main;
+  orientation: horizontal;
+  children: [ element-icon, element-text];
+  padding: 4px 8px;
+  spacing: 4px;
+}
+
+element-icon {
+  size: 0.8em;
+}
+
+element selected.normal {
+  background-color : @bord;
+  text-color: @text;
+}
+
+element normal.normal, element alternate.normal {
+  background-color : @main;
+  text-color: @text;
+}

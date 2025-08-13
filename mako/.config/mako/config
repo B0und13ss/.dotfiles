@@ -13,8 +13,8 @@ max-history=128
 max-visible=10
 default-timeout=5000
 
-margin=6
-outer-margin=5,0
+margin=4
+outer-margin=4,0
 
 max-icon-size=48
 icon-border-radius=2

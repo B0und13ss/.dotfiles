@@ -1,0 +1,34 @@
+* {
+  font:   "RobotoMono Nerd Font 14";
+}
+window {
+  location: northeast;
+  width: 65px;
+  x-offset: -4px;
+  y-offset: 2px;
+}
+
+inputbar {
+  enabled: false;
+}
+
+listview {
+  columns: 2;
+  lines: 1;
+  padding: 0px;
+}
+
+element {
+  children: [ element-text ];
+  padding: 0px;
+  width: 10px;
+  border-radius: 4px;
+}
+
+element-text {
+  horizontal-align: 0.2;
+}
+
+element-icon {
+  enabled: false;
+}

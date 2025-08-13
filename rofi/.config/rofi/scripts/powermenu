@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Define power options
+options="\n"
+
+# Display options with Rofi and capture choice
+choice=$(echo -e "$options" | rofi -theme-str '@import "powermenu"' -dmenu)
+
+# Execute action based on choice
+case "$choice" in
+    "")
+        systemctl poweroff
+        ;;
+    "")
+        systemctl reboot
+        ;;
+    *)
+        exit 1
+        ;;
+esac

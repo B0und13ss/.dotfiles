@@ -11,7 +11,7 @@ case "$choice" in
     "  Shutdown")
         systemctl poweroff
         ;;
-    " Restart ")
+    "  Restart ")
         systemctl reboot
         ;;
     *)

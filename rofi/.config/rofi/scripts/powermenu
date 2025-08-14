@@ -1,17 +1,17 @@
 #!/bin/sh
 
 # Define power options
-options="\n"
+options="  Shutdown\n  Restart "
 
 # Display options with Rofi and capture choice
 choice=$(echo -e "$options" | rofi -theme-str '@import "powermenu"' -dmenu)
 
 # Execute action based on choice
 case "$choice" in
-    "")
+    "  Shutdown")
         systemctl poweroff
         ;;
-    "")
+    " Restart ")
         systemctl reboot
         ;;
     *)

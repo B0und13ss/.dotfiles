@@ -1,11 +1,8 @@
-* {
-  font:   "RobotoMono Nerd Font 14";
-}
 window {
   location: northeast;
-  width: 65px;
+  width: 140px;
   x-offset: -4px;
-  y-offset: 2px;
+  y-offset: 4px;
 }
 
 inputbar {
@@ -13,8 +10,8 @@ inputbar {
 }
 
 listview {
-  columns: 2;
-  lines: 1;
+  columns: 1;
+  lines: 2;
   padding: 0px;
 }
 
@@ -26,7 +23,7 @@ element {
 }
 
 element-text {
-  horizontal-align: 0.2;
+  horizontal-align: 0.5;
 }
 
 element-icon {

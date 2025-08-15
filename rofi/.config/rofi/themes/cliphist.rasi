@@ -1,0 +1,27 @@
+window {
+  location: west;
+  width: 500px;
+  x-offset: 4px;
+  y-offset: -4px;
+}
+
+inputbar {
+  enabled: false;
+}
+
+listview {
+  columns: 1;
+  lines: 10;
+  padding: 0px;
+}
+
+element {
+  children: [ element-text ];
+  padding: 0px;
+  width: 10px;
+  border-radius: 4px;
+}
+
+element-icon {
+  enabled: false;
+}

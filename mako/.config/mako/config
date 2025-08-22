@@ -1,0 +1,28 @@
+font=Noto Sans 10
+
+text-color=#cdd6f4
+background-color=#0F0F17
+border-color=#00B3EE
+
+width=450
+height=200
+
+border-radius=2
+border-size=2
+
+padding=6
+outer-margin=0,0
+
+layer=overlay
+anchor=top-right
+max-history=128
+max-visible=10
+default-timeout=6000
+
+
+max-icon-size=48
+icon-border-radius=2
+
+on-button-left=dismiss --no-history
+on-button-right=dismiss
+on-button-middle=exec makoctl menu -n "$id" rofi -dmenu

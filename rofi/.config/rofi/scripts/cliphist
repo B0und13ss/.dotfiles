@@ -3,5 +3,4 @@
 # requires cliphist and wl-clipboard
 
 # Display cliphist with Rofi
-choice=$(cliphist list | rofi -theme-str '@import "cliphist"' -dmenu | cliphist decode | wl-copy)
-
+choice=$(cliphist list | rofi -theme-str '@import "cliphist"' -dmenu | cliphist decode | wl-copy | wl-paste)

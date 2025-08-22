@@ -1,11 +1,17 @@
+configuration {
+  me-select-entry: "MousePrimary";
+  me-accept-entry: "!MousePrimary";
+}
+
 * {
-  font:   "CaskaydiaCove Nerd Font 13";
+  font:   "Arial 13";
 
   main     : #0F0F17;
-  bord   : #27272E;
+  border   : #00B3EE;
+  accent   : #27272E;
   text     : #CDD6F4;
 
-  text-color       : @text;
+  text-color: @text;
 
   border: 0;
   margin  : 0;
@@ -25,7 +31,7 @@ window {
   y-offset : -4px;
 
   background-color: @main;
-  border-color: @bord;
+  border-color: @border;
   border: 2px;
   border-radius: 4px;
 }
@@ -77,7 +83,7 @@ element-icon {
 }
 
 element selected.normal {
-  background-color : @bord;
+  background-color : @accent;
   text-color: @text;
 }
 

@@ -9,6 +9,22 @@
   font-size: 14px;
 }
 
+tooltip {
+  background-color: #0F0F17;
+  color: #CDD6F4;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 2px solid #00B3EE;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+tooltip label {
+  color: #CDD6F4;
+  color: inherit;
+  background-color: transparent;
+}
+
 window#waybar {
   background-color: #0F0F17;
   border-bottom: 2px solid #27272E;
@@ -37,7 +53,7 @@ button {
 }
 
 #workspaces {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 #workspaces button {
@@ -58,7 +74,7 @@ button {
 }
 
 #custom-arch {
-  font-size: 32px;
+  font-size: 28px;
   margin: 0 0px 0 18px;
   color: #CDD6F4;
 }

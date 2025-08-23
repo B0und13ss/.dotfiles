@@ -3,6 +3,9 @@
   "layer": "top", // Waybar at top layer
   "spacing": 4, // Gaps between modules (4px)
   "margin": "4 4 0 4",
+  //
+  //
+  //
   "modules-left": [
     "custom/arch",
     "hyprland/workspaces",
@@ -12,18 +15,17 @@
     "hyprland/window"
   ],
   "modules-right": [
-    "group/tray",
-    "mpd",
     "clock",
     "network",
     "pulseaudio",
     "custom/power"
   ],
-  "hyprland/window": {
-    "format": "<span  weight='bold' >{initialTitle}</span>",
-    "max-length": 120,
-    "icon": false,
-    "icon-size": 13
+  //
+  // MODULES
+  //
+  "custom/arch": {
+    "format": "󰣇",
+    "tooltip": false
   },
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -42,7 +44,8 @@
   },
   "mpris": {
     "format": "{player_icon} {title} - {artist}",
-    "format-paused": "{status_icon} {title} - {artist}{dynamic}",
+    "format-paused": "{status_icon} {title} - {artist}",
+    "tooltip-format": "{length}",
     "max-length": 50,
     "player-icons": {
       "default": "",
@@ -50,43 +53,20 @@
     },
     "status-icons": {
       "paused": "▶"
-    }
-    // "ignored-players": ["firefox"]
-  },
-  "tray": {
-    "icon-size": 16,
-    "rotate": 0,
-    "spacing": 3
-  },
-  "custom/arch": {
-    "format": "󰣇"
-  },
-  "custom/spacer": {
-    "format": "|"
-  },
-  "group/expand": {
-    "orientation": "horizontal",
-    "drawer": {
-      "transition-duration": 600,
-      "children-class": "not-power",
-      "transition-to-left": true,
-      //  "click-to-reveal": true
     },
-    "modules": [
-      "custom/menu",
-      "custom/spacer",
-      "tray"
-    ]
+    "ignored-players": ["firefox"]
   },
-  "custom/menu": {
-    "format": "󰅃",
-    "rotate": 90
+  "hyprland/window": {
+    "format": "<span  weight='bold' >{initialTitle}</span>",
+    "max-length": 120,
+    "icon": false,
+    "icon-size": 13
   },
   "clock": {
     "interval": 1,
     "timezone": "America/New_York",
     "tooltip": true,
-    "tooltip-format": "<span font='Noto Sans'>{:%Y-%m-%d}</span>",
+    "tooltip-format": "{:%Y-%m-%d}",
     "format": "{:%H:%M:%S}"
   },
   "network": {
@@ -103,18 +83,7 @@
     "format-disconnected": " ",
     "tooltip-format-disconnected": "Disconnected",
     "on-click": "nmtui",
-    "interval": 1,
-  },
-  "power-profiles-daemon": {
-    "format": "{icon}",
-    "tooltip-format": "{profile}",
-    "tooltip": true,
-    "format-icons": {
-      "default": "",
-      "performance": "",
-      "balanced": "",
-      "power-saver": ""
-    }
+    "interval": 1
   },
   "pulseaudio": {
     "scroll-step": 5,
@@ -140,18 +109,6 @@
       ]
     },
     "on-click": "pavucontrol"
-  },
-  "custom/media": {
-    "format": "{icon} {text}",
-    "return-type": "json",
-    "max-length": 40,
-    "format-icons": {
-      "spotify": "",
-      "default": "🎜"
-    },
-    "escape": true,
-    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
   },
   "custom/power": {
     "format": "⏻",

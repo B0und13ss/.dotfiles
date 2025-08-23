@@ -92,27 +92,22 @@
     "format": "{icon}",
     "format-bluetooth": "{icon}",
     "format-bluetooth-muted": "{icon}",
-    "format-muted": "",
+    "format-muted": "",
     "format-source": "",
     "format-source-muted": "",
     "format-icons": {
       "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
       "default": [
         "",
         "",
         ""
       ]
     },
-    "on-click": "pavucontrol"
+    "on-click": "pwvucontrol"
   },
   "custom/power": {
     "format": "⏻",
     "tooltip": false,
-    "on-click": "/home/ian/dotfiles/rofi/.config/rofi/scripts/powermenu"
+    "on-click": "~/.dotfiles/rofi/.config/rofi/scripts/powermenu"
   }
 }

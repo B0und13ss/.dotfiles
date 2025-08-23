@@ -4,7 +4,7 @@
 /* text     : #CDD6F4; */
 
 * {
-  font-family: Arial, JetBrainsMono Nerd Font Mono;
+  font-family: JetBrainsMono Nerd Font Mono;
   font-weight: bold;
   font-size: 14px;
 }
@@ -15,7 +15,7 @@ tooltip {
   border-radius: 4px;
   padding: 8px 12px;
   font-size: 14px;
-  border: 2px solid #00B3EE;
+  border: 2px solid #27272E;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -27,7 +27,7 @@ tooltip label {
 
 window#waybar {
   background-color: #0F0F17;
-  border-bottom: 2px solid #27272E;
+  border: 2px solid #27272E;
   border-radius: 4px;
   color: #CDD6F4;
   transition-property: background-color;

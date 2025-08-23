@@ -1,8 +1,4 @@
 window {
-  location: southwest;
-  width: 500px;
-  x-offset: 4px;
-  y-offset: -4px;
 }
 
 inputbar {

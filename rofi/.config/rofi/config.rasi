@@ -4,14 +4,14 @@ configuration {
 }
 
 * {
-  font:   "Arial 13";
+  font:   "JetBrainsMono Nerd Font Mono 13";
 
   main     : #0F0F17;
-  border   : #00B3EE;
+  bord   : #27272E;
   accent   : #27272E;
-  text     : #CDD6F4;
+  tex     : #CDD6F4;
 
-  text-color: @text;
+  text-color: @tex;
 
   border: 0;
   margin  : 0;
@@ -25,26 +25,27 @@ element-icon, element-text, scrollbar {
 }
 
 window {
-  location : southwest;
-  width    : 400px;
-  x-offset : 4px;
-  y-offset : -4px;
+  location : center;
+  width    : 800px;
+  x-offset : 0px;
+  y-offset : 0px;
 
   background-color: @main;
-  border-color: @border;
+  border-color: @bord;
   border: 2px;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 entry {
   placeholder: "Search";
-  text-color: @text;
+  text-color: @tex;
 }
 
 inputbar {
+  margin: 0px 4px;
   spacing  : 8px;
   padding  : 4px 8px;
-  text-color: @text;
+  text-color: @tex;
   children : [ entry ];
   background-color: @main;
 }
@@ -74,6 +75,7 @@ element {
   background-color: @main;
   orientation: horizontal;
   children: [ element-icon, element-text];
+  border-radius: 4px;
   padding: 4px 8px;
   spacing: 8px;
 }
@@ -84,10 +86,10 @@ element-icon {
 
 element selected.normal {
   background-color : @accent;
-  text-color: @text;
+  text-color: @tex;
 }
 
 element normal.normal, element alternate.normal {
   background-color : @main;
-  text-color: @text;
+  text-color: @tex;
 }

@@ -62,7 +62,7 @@ icon-search {
 }
 
 listview {
-  lines        : 10;
+  lines        : 7;
   columns      : 1;
   scrollbar    : false;
   fixed-height : true;

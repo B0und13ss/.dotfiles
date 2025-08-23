@@ -4,7 +4,7 @@ configuration {
 }
 
 * {
-  font:   "JetBrainsMono Nerd Font Mono 13";
+  font:   "AdwaitaSans 13";
 
   main     : #0F0F17;
   bord   : #27272E;
@@ -44,7 +44,7 @@ entry {
 inputbar {
   margin: 0px 4px;
   spacing  : 8px;
-  padding  : 4px 8px;
+  padding  : 8px;
   text-color: @tex;
   children : [ entry ];
   background-color: @main;
@@ -76,12 +76,12 @@ element {
   orientation: horizontal;
   children: [ element-icon, element-text];
   border-radius: 4px;
-  padding: 4px 8px;
+  padding: 8px;
   spacing: 8px;
 }
 
 element-icon {
-  size: 0.8em;
+  size: 1em;
 }
 
 element selected.normal {

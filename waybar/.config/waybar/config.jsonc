@@ -45,7 +45,7 @@
   "mpris": {
     "format": "{player_icon} {title} - {artist}",
     "format-paused": "{status_icon} {title} - {artist}",
-    "tooltip-format": "{length}",
+    "tooltip": false,
     "max-length": 50,
     "player-icons": {
       "default": "",
@@ -59,6 +59,7 @@
   "hyprland/window": {
     "format": "<span  weight='bold' >{title}</span>",
     "max-length": 120,
+    "tooltip": false,
     "icon": false,
     "icon-size": 13
   },

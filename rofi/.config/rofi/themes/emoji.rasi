@@ -1,23 +1,16 @@
-window {
-  location: southwest;
-  width: 253px;
-  x-offset: 4px;
-  y-offset: -4px;
-}
-
 inputbar {
   enabled: false;
 }
 
 listview {
   columns: 10;
-  lines: 10;
-  padding: 0px;
+  lines: 7;
+  padding: 8px;
 }
 
 element {
   children: [ element-text ];
-  padding: 0px;
+  padding: 8px;
   width: 8px;
   border-radius: 0px;
 }

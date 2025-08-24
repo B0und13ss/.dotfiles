@@ -1,8 +1,8 @@
-font=Noto Sans 10
+font=Inter 10
 
 text-color=#cdd6f4
 background-color=#0F0F17
-border-color=#00B3EE
+border-color=#27272E
 
 width=450
 height=200
@@ -16,9 +16,8 @@ outer-margin=0,0
 layer=overlay
 anchor=top-right
 max-history=128
-max-visible=10
-default-timeout=6000
-
+max-visible=64
+default-timeout=0
 
 max-icon-size=48
 icon-border-radius=2

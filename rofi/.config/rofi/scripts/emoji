@@ -1,3 +1,2 @@
 #!/bin/sh
-
 rofi -modi emoji -show emoji -emoji-format '{emoji}' -theme-str '@import "emoji"'

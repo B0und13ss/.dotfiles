@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import subprocess
+
+# Define power options
+options = "  Shutdown\n  Reboot "
+
+# Display options with Rofi and capture choice
+choice = subprocess.run("echo -e '  Shutdown\n  Reboot ' | rofi -theme-str '@import \"powermenu\"' -dmenu", shell=True, capture_output=True, text=True)
+
+choice = choice.stdout
+choice = choice.strip()
+
+# Execute action based on choice
+
+if choice == "  Shutdown":
+    subprocess.run("systemctl poweroff", shell=True)
+    subprocess.run("cliphist wipe", shell=True)
+elif choice == "  Reboot":
+    subprocess.run("systemctl reboot", shell=True)
+    subprocess.run("cliphist wipe", shell=True)

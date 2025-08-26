@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+
+import subprocess
+
+subprocess.run("cliphist list | awk -F'\t' '{print $2}' | rofi -theme-str '@import \"cliphist\"' -dmenu | cliphist decode | wl-copy", shell=True)

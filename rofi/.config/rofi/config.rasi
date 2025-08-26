@@ -4,7 +4,7 @@ configuration {
 }
 
 * {
-  font:   "Inter 13";
+  font:   "Inter 13", "JetBrainsMono Nerd Font Mono 13";
 
   main     : #0F0F17;
   bord   : #27272E;

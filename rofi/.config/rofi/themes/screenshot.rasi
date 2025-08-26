@@ -1,0 +1,28 @@
+window {
+  width: 200px;
+}
+
+inputbar {
+  enabled: false;
+}
+
+listview {
+  columns: 1;
+  lines: 3;
+  padding: 8px;
+}
+
+element {
+  children: [ element-text ];
+  padding: 8px;
+  width: 10px;
+  border-radius: 4px;
+}
+
+element-text {
+  horizontal-align: 0.5;
+}
+
+element-icon {
+  enabled: false;
+}

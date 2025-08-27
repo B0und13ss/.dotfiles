@@ -1,6 +1,6 @@
 window {
   location: northeast;
-  width: 140px;
+  width: 200px;
   x-offset: -4px;
   y-offset: 4px;
   border-radius: 4px;
@@ -13,12 +13,12 @@ inputbar {
 listview {
   columns: 1;
   lines: 2;
-  padding: 0px;
+  padding: 4px;
 }
 
 element {
   children: [ element-text ];
-  padding: 0px;
+  padding: 4px;
   width: 10px;
   border-radius: 4px;
 }

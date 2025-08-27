@@ -1,0 +1,29 @@
+[global]
+monitor = 0
+follow = none
+
+font = "Inter 10", "JetBrainsMono Nerd Font Mono 10"
+
+foreground = "#cdd6f4"
+background = "#0f0f17"
+frame_color = "#89b4fb"
+
+width = (100, 450)
+height = (50, 200)
+origin = top-right
+offset = (4, 4)
+
+frame_width = 2
+gap_size = 4
+
+corner_radius = 3
+progress_bar_corner_radius = 3
+
+sort = id
+layer = top
+
+history_length = 32 
+
+timeout = 0
+
+dmenu = "rofi -dmenu"

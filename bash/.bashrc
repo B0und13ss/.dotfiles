@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='eza -1 --icons --sort=type'
+alias ls='eza -1 --icons=auto --sort=type'
 alias vi='nvim'
 alias vim='nvim'
 alias grep='rg'

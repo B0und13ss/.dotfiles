@@ -1,14 +1,11 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  lazy = false,
   build = ":TSUpdate",
   config = function()
-    require("nvim-treesitter.configs").setup({
+    require("nvim-treesitter").setup({
       ensure_installed = {
-        "html",
-        "css",
-        "javascript",
-        "typescript",
-        "tsx",
+        "c",
         "json",
         "lua",
         "vim",
@@ -21,16 +18,6 @@ return {
         enable = true,
         additional_vim_regex_highlighting = false,
       },
-      indent = { enable = true },
-      incremental_selection = {
-        enable = true,
-        keymaps = {
-          init_selection = "<Enter>",
-          node_incremental = "<Enter>",
-          scope_incremental = false,
-          node_decremental = "<Backspace>",
-        },
-      },
     })
-  end,
+  end
 }

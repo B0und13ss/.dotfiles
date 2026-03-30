@@ -1,14 +1,3 @@
-# This is my Neovim configuration
+# neovim
 
-## Plugins
-- [Autopairs](https://github.com/windwp/nvim-autopairs) (complete quotes, brackets, etc.)
-- [Autotag](https://github.com/windwp/nvim-ts-autotag) (complete html tags)
-- [Catppuccin](https://github.com/catppuccin/nvim) (best colorscheme obviously)
-- [Conform](https://github.com/stevearc/conform.nvim) (formatting)
-- [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) (to see git changes)
-- [Mason]() (lsp support)
-- [Lualine](https://github.com/nvim-lualine/lualine.nvim) (better status bar)
-- [Telescope](https://github.com/nvim-telescope/telescope.nvim) (fuzzy find files)
-- [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (syntx parsing)
-
-It also has plenty of opinionated options 👌
+<img width="1902" height="1218" alt="Screenshot 2026-03-17 at 21 37 13" src="https://github.com/user-attachments/assets/7319a7a8-8ed4-4f8a-813a-ca258f1b56ca" />

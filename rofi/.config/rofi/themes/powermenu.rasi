@@ -3,7 +3,7 @@ window {
   width: 200px;
   x-offset: -4px;
   y-offset: 4px;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 inputbar {

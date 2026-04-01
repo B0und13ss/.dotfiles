@@ -1,26 +1,27 @@
-font=Inter 10
+font=Noto Sans 10
 
-text-color=#cdd6f4
-background-color=#0F0F17
-border-color=#27272E
+text-color=#dfe4f7
+background-color=#28282811
+border-color=#4e4e4e11
 
 width=450
 height=200
 
-border-radius=2
+border-radius=10
 border-size=2
 
-padding=6
+padding=12
 outer-margin=0,0
+margin=4
 
 layer=overlay
 anchor=top-right
 max-history=128
 max-visible=64
-default-timeout=0
+default-timeout=5000
 
 max-icon-size=48
-icon-border-radius=2
+icon-border-radius=10
 
 on-button-left=dismiss --no-history
 on-button-right=dismiss

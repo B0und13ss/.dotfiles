@@ -1,5 +1,5 @@
 window {
-  width: 200px;
+  width: 250px;
 }
 
 inputbar {
@@ -10,6 +10,7 @@ listview {
   columns: 1;
   lines: 3;
   padding: 8px;
+  require-input: false;
 }
 
 element {

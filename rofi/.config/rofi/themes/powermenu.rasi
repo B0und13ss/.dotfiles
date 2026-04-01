@@ -14,6 +14,7 @@ listview {
   columns: 1;
   lines: 2;
   padding: 4px;
+  require-input: false;
 }
 
 element {

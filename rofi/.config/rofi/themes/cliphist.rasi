@@ -3,9 +3,9 @@ inputbar {
 }
 
 listview {
-  columns: 1;
   lines: 7;
   padding: 8px;
+  require-input: false;
 }
 
 element {

@@ -2,4 +2,4 @@
 
 import subprocess
 
-subprocess.run("cliphist list | awk -F'\t' '{print $2}' | rofi -theme-str '@import \"cliphist\"' -dmenu | cliphist decode | wl-copy", shell=True)
+subprocess.run("cliphist list | rofi -dmenu -display-columns 2 -theme-str '@import \"cliphist\"' | cliphist decode | wl-copy", shell=True)

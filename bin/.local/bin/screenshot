@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import subprocess
 
-choice = subprocess.run("echo -e '󰩬 Area\n  Active\n󰹑  Screen' | rofi -theme-str '@import \"screenshot\"' -dmenu", shell=True, capture_output=True, text=True)
+choice = subprocess.run("echo -e '󰩬 Area\n  Active\n󰹑  Screen' | rofi -theme-str '@import \"menu\"' -dmenu", shell=True, capture_output=True, text=True)
 
 choice = choice.stdout
 choice = choice.strip()
@@ -10,10 +10,10 @@ choice = choice.strip()
 
 if choice == "󰩬 Area":
     subprocess.run("sleep 0.2", shell=True)
-    subprocess.run("grimblast copy area", shell=True)
+    subprocess.run("grimblast copysave area -nfs 2", shell=True)
 elif choice == "  Active":
     subprocess.run("sleep 0.2", shell=True)
-    subprocess.run("grimblast copy active", shell=True)
+    subprocess.run("grimblast copysave active -ns 2", shell=True)
 elif choice == "󰹑  Screen":
     subprocess.run("sleep 0.2", shell=True)
-    subprocess.run("grimblast copy output", shell=True)
+    subprocess.run("grimblast copysave output -n", shell=True)

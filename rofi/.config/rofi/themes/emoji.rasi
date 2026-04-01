@@ -1,20 +1,33 @@
-inputbar {
+element-icon {
   enabled: false;
+}
+
+@import "config"
+
+textbox {
+  vertical-align:   0.5;
+  horizontal-align: 0.5;
 }
 
 listview {
-  columns: 10;
-  lines: 7;
-  padding: 8px;
+  columns:       9;
+  lines:         7;
+  cycle:         true;
+  dynamic:       true;
+  layout:        vertical;
+  flow:          horizontal;
+  require-input: false;
+  reverse:       false;
+  fixed-height:  true;
+  fixed-columns: true;
 }
 
 element {
-  children: [ element-text ];
-  padding: 8px;
-  width: 8px;
-  border-radius: 0px;
+  orientation: vertical;
 }
 
-element-icon {
-  enabled: false;
+element-text {
+  vertical-align:   0.5;
+  horizontal-align: 0.5;
+  font:  "Noto Sans 24";
 }

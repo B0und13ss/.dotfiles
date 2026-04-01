@@ -8,7 +8,7 @@ configuration {
 
   main     : #28282833;
   bord   : #4e4e4e33;
-  accent   : #28282844;
+  accent   : #28282866;
 
   tex     : #dfe4f7;
 

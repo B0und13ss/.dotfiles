@@ -40,6 +40,7 @@ window {
 entry {
   placeholder: "Search";
   text-color: @tex;
+  placeholder-color: @tex;
 }
 
 inputbar {

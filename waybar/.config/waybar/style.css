@@ -11,8 +11,8 @@
 
 window {
   color: rgba(217, 216, 216, 1);
-  background: rgba(40, 40, 40, 0.2);
-  animation: fadeIn 0.5s ease-in forwards;
+  background: rgba(40, 40, 40, 0.1);
+  border: 2px solid rgba(78, 78, 78, 0.01);
   border-radius: 10px;
   color: #dfe4f7;
 }

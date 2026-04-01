@@ -6,9 +6,9 @@ configuration {
 * {
   font:   "Noto Sans 13";
 
-  main     : #28282833;
-  bord   : #4e4e4e33;
-  accent   : #28282866;
+  main     : #28282811;
+  bord   : #4e4e4e11;
+  accent   : #4e4e4e33;
 
   tex     : #dfe4f7;
 
@@ -33,7 +33,7 @@ window {
 
   background-color: @main;
   border-color: @bord;
-  border: 1px;
+  border: 2px;
   border-radius: 10px;
 }
 

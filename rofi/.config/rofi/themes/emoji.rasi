@@ -1,8 +1,8 @@
+@import "config"
+
 element-icon {
   enabled: false;
 }
-
-@import "config"
 
 textbox {
   vertical-align:   0.5;

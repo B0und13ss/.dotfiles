@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
+#!/usr/bin/bash
 
-import subprocess
-
-subprocess.run("cliphist list | rofi -dmenu -display-columns 2 -theme-str '@import \"cliphist\"' | cliphist decode | wl-copy", shell=True)
+cliphist list | rofi -dmenu -display-columns 2 -theme-str '@import "cliphist"' | cliphist decode | wl-copy && wtype -M ctrl -k v -m ctrl

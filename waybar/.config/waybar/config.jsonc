@@ -5,27 +5,43 @@
   "height": 32,
   "margin": "4 4 0 4",
 
-  "modules-left": ["custom/arch", "hyprland/workspaces"],
+  "modules-left": ["custom/arch", "hyprland/workspaces", "mpris"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["tray", "mpris", "pulseaudio", "network", "clock"],
+  "modules-right": ["group/tray", "clock"],
 
+  "group/tray": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 250
+    },
+    "modules": [
+      "custom/tray-icon",
+      "tray",
+      "pulseaudio",
+      "network"
+    ]
+  },
+  "custom/tray-icon": {
+    "format": "",
+    "tooltip": false
+  },
   "custom/arch": {
     "format": "󰣇",
-    "tooltip": false,
+    "tooltip": false
   },
   "hyprland/workspaces": {
     "format": "{name}",
-    "disable-scroll": true,
+    "disable-scroll": true
   },
   "hyprland/window": {
     "max-length": 80,
-    "tooltip": false,
+    "tooltip": false
   },
   "clock": {
     "format": "{:%a %d %b %H:%M:%S}",
     "tooltip": false,
     "interval": 1,
-    "on-click": "gnome-clocks",
+    "on-click": "gnome-clocks"
   },
   "network": {
     "format": "{icon}",
@@ -34,10 +50,10 @@
     "format-icons": {
       "wifi": ["󰤟", "󰤢", "󰤥", "󰤨"],
       "ethernet": ["󰈀"],
-      "disconnected": ["󰤭"],
+      "disconnected": ["󰤭"]
     },
     "on-click": "kitty -e nmtui",
-    "tooltip": false,
+    "tooltip": false
   },
   "pulseaudio": {
     "format": "{icon}",
@@ -46,27 +62,25 @@
     "format-muted": "",
     "format-icons": {
       "phone": [" ", " ", " "],
-      "default": ["", "", ""],
+      "default": ["", "", ""]
     },
     "scroll-step": 10,
     "on-click": "pavucontrol",
-    "tooltip": false,
+    "tooltip": false
   },
   "mpris": {
-    "format": "{player_icon}  {title}",
-    "format-paused": "{player_icon}  {title}",
+    "format": "{player_icon} {artist} - {title}",
+    "format-paused": "{player_icon}  {title}",
     "format-stopped": "",
     "player-icons": {
       "spotify": "",
-      "chromium": "",
+      "chromium": ""
     },
     "on-click": "playerctl play-pause",
+    "on-right-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
     "ignored-players": ["mpv"],
-    "tooltip": false,
-  },
-  "tray": {
-    "icon-size": 18,
-  },
+    "tooltip": false
+  }
 }

@@ -10,7 +10,6 @@
 }
 
 window {
-  color: rgba(217, 216, 216, 1);
   background: rgba(40, 40, 40, 0.1);
   border: 2px solid rgba(78, 78, 78, 0.01);
   border-radius: 10px;
@@ -59,4 +58,8 @@ window {
   color: #dfe4f7;
   font-size: 18px;
   margin: 0 6px 0 12px;
+}
+
+#tray {
+  margin: 0 2px 0 12px;
 }

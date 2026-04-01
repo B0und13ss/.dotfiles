@@ -1,236 +1,62 @@
-/* main     : #0F0F17; */
-/* border   : #00B3EE; */
-/* accent   : #27272E; */
-/* text     : #CDD6F4; */
-
 * {
-  font-family: Inter, JetBrainsMono Nerd Font Mono;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-tooltip {
-  background-color: #0F0F17;
-  color: #CDD6F4;
-  border-radius: 4px;
-  padding: 8px 12px;
-  font-size: 14px;
-  border: 2px solid #27272E;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-tooltip label {
-  color: #CDD6F4;
-  color: inherit;
-  background-color: transparent;
-}
-
-window#waybar {
-  background-color: #0F0F17;
-  border: 2px solid #27272E;
-  border-radius: 4px;
-  color: #CDD6F4;
-  transition-property: background-color;
-  transition-duration: .5s;
-}
-
-window#waybar.hidden {
-  opacity: 0.2;
-}
-
-window#waybar.termite {
-  background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-  background-color: #000000;
-  border: none;
-}
-
-button {
   border: none;
   border-radius: 0;
+  font-family: 'Hack Nerd Font Propo';
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: none;
+  text-shadow: none;
+  transition-duration: 0s;
+}
+
+window {
+  color: rgba(217, 216, 216, 1);
+  background: rgba(40, 40, 40, 0.2);
+  animation: fadeIn 0.5s ease-in forwards;
+  border-radius: 10px;
+  color: #dfe4f7;
 }
 
 #workspaces {
-  font-size: 17px;
+  margin: 0 2px;
+  color: #dfe4f7;
 }
 
 #workspaces button {
-  margin: 0 0 0 8px;
-  font-weight: bold;
-  padding: 0 4px;
-  color: #787D8F;
+  padding: 0 0;
+  color: #b3b7c5;
 }
 
 #workspaces button.active {
-  color: #CDD6F4;
-  box-shadow: none;
+  color: #dfe4f7;
 }
 
 #workspaces button.urgent {
-  background-color: #eb4d4b;
-  color: #FFFFFF;
+  color: rgba(238, 46, 36, 1);
 }
 
-#custom-arch {
-  font-size: 28px;
-  margin: 0 0px 0 18px;
-  color: #CDD6F4;
-}
-
-#custom-power {
-  margin: 0 20px 0 0;
-  font-size: 18px;
-}
-
+#mode,
+#network,
 #mpris {
-  margin: 0 0 0 12px;
-  color: #CDD6F4;
-}
-
-#mpris.playing {
-  color: #CDD6F4;
-}
-
-#clock,
-#pulseaudio,
-#tray,
-#power-profiles-daemon {
-  margin: 0 12px 0 0;
-  color: #CDD6F4;
-}
-
-#clock {
-  font-size: 15.5px;
-  background-color: transparent;
-  font-weight: bold;
-}
-
-#power-profiles-daemon.performance {
-  color: #f53c3c;
-  background-color: transparent;
-}
-
-#power-profiles-daemon.balanced {
-  color: #2980b9;
-  background-color: transparent;
-}
-
-#power-profiles-daemon.power-saver {
-  color: #2ecc71;
-  background-color: transparent;
-}
-
-label:focus {
-  background-color: #000000;
-}
-
-#network {
-  font-size: 32px;
-  margin: 0 12px 0 0;
-  background-color: transparent;
-}
-
-#network.disconnected {
-  background-color: #f53c3c;
+  color: #dfe4f7;
+  margin: 0px 6px 0px 6px;
+  min-width: 25px;
 }
 
 #pulseaudio {
-  background-color: transparent;
-  font-size: 28px;
+  color: #dfe4f7;
+  margin: 0px 0px 0px 6px;
+  min-width: 25px;
 }
 
-#pulseaudio.muted {
-  color: #f53c3c;
+#clock {
+  color: #dfe4f7;
+  margin: 0px 12px 0px 6px;
+  min-width: 140px;
 }
 
-#custom-media {
-  background-color: #66cc99;
-  color: #2a5c45;
-  min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-  background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-  background-color: #ffa000;
-}
-
-#temperature {
-  background-color: #f0932b;
-}
-
-#temperature.critical {
-  background-color: #eb4d4b;
-}
-
-#tray {
-  background-color: #2980b9;
-}
-
-#tray>.passive {
-  -gtk-icon-effect: dim;
-}
-
-#tray>.needs-attention {
-  -gtk-icon-effect: highlight;
-  background-color: #eb4d4b;
-}
-
-#idle_inhibitor {
-  background-color: #2d3436;
-}
-
-#idle_inhibitor.activated {
-  background-color: #ecf0f1;
-  color: #2d3436;
-}
-
-#mpd {
-  background-color: #66cc99;
-  color: #2a5c45;
-}
-
-#mpd.disconnected {
-  background-color: #f53c3c;
-}
-
-#mpd.stopped {
-  background-color: #90b1b1;
-}
-
-#mpd.paused {
-  background-color: #51a37a;
-}
-
-#scratchpad {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-  background-color: transparent;
-}
-
-#privacy {
-  padding: 0;
-}
-
-#privacy-item {
-  padding: 0 5px;
-  color: white;
-}
-
-#privacy-item.screenshare {
-  background-color: #cf5700;
-}
-
-#privacy-item.audio-in {
-  background-color: #1ca000;
-}
-
-#privacy-item.audio-out {
-  background-color: #0069d4;
+#custom-arch {
+  color: #dfe4f7;
+  font-size: 18px;
+  margin: 0 6px 0 12px;
 }

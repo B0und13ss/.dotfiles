@@ -29,11 +29,18 @@
     "format": "󰣇",
     "tooltip": false
   },
+  "tray": {
+    "spacing": 12
+  },
   "hyprland/workspaces": {
     "format": "{name}",
     "disable-scroll": true
   },
   "hyprland/window": {
+    "format": "{initialTitle}",
+    "rewrite": {
+      "(.*) - Google Chrome": "Google Chrome"
+    },
     "max-length": 80,
     "tooltip": false
   },
@@ -70,7 +77,7 @@
   },
   "mpris": {
     "format": "{player_icon} {artist} - {title}",
-    "format-paused": "{player_icon}  {title}",
+    "format-paused": "{player_icon}  {artist} - {title}",
     "format-stopped": "",
     "player-icons": {
       "spotify": "",

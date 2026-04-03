@@ -35,3 +35,4 @@ PS1="\[\033[0;32m\]\u\[\033[0m\] on \[\033[0;32m\]\h\[\033[0m\] at \[\033[0;34m\
 source /usr/share/nvm/init-nvm.sh
 
 export PATH=$PATH:~/.local/bin/
+export MANPAGER='nvim +Man!'

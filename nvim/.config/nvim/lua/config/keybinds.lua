@@ -8,7 +8,7 @@ vim.keymap.set("i", "<C-j>", "<down>")
 vim.keymap.set("i", "<C-k>", "<up>")
 vim.keymap.set("i", "<C-l>", "<right>")
 
-vim.keymap.set("n", "<leader>e", ":Yazi<CR>", { desc = "Open Explore" })
+vim.keymap.set("n", "<leader>e", ":Ex<CR>", { desc = "Open Explore" })
 
 vim.keymap.set("n", "<Esc>", function()
 	vim.cmd("nohlsearch")

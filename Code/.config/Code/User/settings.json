@@ -292,7 +292,7 @@
     "activityBar.background": "#222222",
     "statusBar.background": "#222222"
   },
-  "workbench.colorTheme": "Dark 2026",
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
   "redhat.telemetry.enabled": false,
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml",
